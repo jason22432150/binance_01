@@ -6,7 +6,7 @@
       </div>
       <div>
         <div :style="{ color: '#707A8A', display: 'flex' }">
-
+          <q-icon name="fas fa-euro-sign" class="text-yellow bg-indigo-10" :style="{'border-radius': '50%', height:'20px',width:'20px' }"/>
         </div>
       </div>
     </div>
