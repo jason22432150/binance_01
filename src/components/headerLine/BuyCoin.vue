@@ -23,7 +23,15 @@
       </div>
     </div>
     <div class="firstFloor-down" v-for="site in sites" :key="site.title">
-      <MenuDropLink :hot="site.hot" :title="site.title" :expound="site.expound" :icon="f"/>
+      <MenuDropLink
+        :hot="site.hot"
+        :title="site.title"
+        :expound="site.expound"
+        :icon="f"
+        :mouse="site.mouse"
+        @mouseover="site.mouse = true"
+        @mouseleave="site.mouse = false"
+      />
     </div>
   </div>
 </template>
@@ -61,6 +69,9 @@ export default {
   display: flex;
   margin-left: 16px;
   font-size: 14px;
+}
+.firstFloor-down{
+  padding: 0 16px 0 16px;
 }
 
 .pay-Way {

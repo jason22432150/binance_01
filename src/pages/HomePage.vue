@@ -1,5 +1,15 @@
 <template>
   <q-header> </q-header>
+  <q-page class="test">
+    <div class="test">123321132</div>
+    <div class="test">123321132</div>
+    <div class="test">123321132</div>
+    <div class="test">123321132</div>
+    <div class="test">123321132</div>
+    <div class="test">123321132</div>
+  </q-page>
+
+  <!-- <router-view></router-view> -->
 </template>
 
 <script lang="ts">
@@ -11,4 +21,8 @@ export default defineComponent({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.test {
+  background: rgb(122, 122, 122);
+}
+</style>
