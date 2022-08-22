@@ -1,8 +1,15 @@
-import {defineStore} from 'pinia';
+import { defineStore } from 'pinia';
 
 export const MenuComponent = defineStore('MenuComponent', {
   state: () => ({
     sites: [
+      {
+        text: 'BxBxsGrid',
+        message: '',
+        arrow: true,
+        menu: false,
+        transform: 'translate(0px, 64px)',
+      },
       {
         text: '買幣',
         message: 'EUR',
@@ -59,4 +66,4 @@ export const MenuComponent = defineStore('MenuComponent', {
       return state.sites;
     },
   },
-})
+});
