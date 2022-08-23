@@ -23,6 +23,6 @@ export default defineComponent({
 
 <style scoped>
 .test {
-  background: rgb(122, 122, 122);
+  /* background: rgb(122, 122, 122); */
 }
 </style>

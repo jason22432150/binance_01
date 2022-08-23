@@ -71,7 +71,7 @@ export default {
   font-size: 14px;
 }
 .firstFloor-down{
-  padding: 0 16px 16px;
+  padding: 0 16px 0 16px;
 }
 
 .pay-Way {

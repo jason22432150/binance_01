@@ -6,7 +6,7 @@
         <div>{{ title }}</div>
         <div class="hot" v-if="hot == true">熱門</div>
       </div>
-      <div>{{ expound }}</div>
+      <div :style="{'font-size': '12px'}">{{ expound }}</div>
     </div>
     <q-icon
       :style="{ color: '#F0B90B' }"

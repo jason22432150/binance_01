@@ -71,7 +71,8 @@
                 :style="{ color: '#707A8A', display: 'flex' }"
               />
               <div v-if="site.menu == true">
-                <BuyCoin :style="{ transform: site.transform }" />
+                <BuyCoin v-if="site.text == '買幣'" :style="{ transform: site.transform }" />
+                <MenuTrade v-if="site.text == '交易'" :style="{ transform: site.transform }" />
               </div>
             </div>
           </div>
@@ -104,6 +105,7 @@ import { ref } from 'vue';
 import BinanceIcon from 'src/icons/BinanceLogo.vue';
 import BxBxsGrid from 'src/icons/BxBxsGrid.vue';
 import BuyCoin from 'src/components/headerLine/BuyCoin.vue';
+import MenuTrade from 'src/components/headerLine/MenuTrade.vue';
 import { MenuComponent } from 'src/stores/MenuComponents/MenuComponent';
 import { storeToRefs } from 'pinia';
 
@@ -113,6 +115,7 @@ export default {
     BinanceIcon,
     BxBxsGrid,
     BuyCoin,
+    MenuTrade,
   },
   setup() {
     const rightDrawerOpen = ref(false);
