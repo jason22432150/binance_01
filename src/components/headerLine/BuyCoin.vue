@@ -22,8 +22,10 @@
         </div>
       </div>
     </div>
-    <div class="firstFloor-down" v-for="site in sites" :key="site.title">
+    <div class="firstFloor-down">
       <MenuDropLink
+        v-for="site in sites"
+        :key="site.title"
         :hot="site.hot"
         :title="site.title"
         :expound="site.expound"
@@ -62,6 +64,8 @@ export default {
   transform: translate3d(210px, 64px, 0px);
   max-width: 400px;
   z-index: 1;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 10px 10px;
 }
 
 .firstFloor-up {
@@ -70,8 +74,8 @@ export default {
   margin-left: 16px;
   font-size: 14px;
 }
-.firstFloor-down{
-  padding: 0 16px 0 16px;
+.firstFloor-down {
+  padding: 0 16px 16px 16px;
 }
 
 .pay-Way {
