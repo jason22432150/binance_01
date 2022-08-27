@@ -104,7 +104,7 @@
 import { ref } from 'vue';
 import BinanceIcon from 'src/icons/BinanceLogo.vue';
 import BxBxsGrid from 'src/icons/BxBxsGrid.vue';
-import BuyCoin from 'src/components/headerLine/BuyCoin.vue';
+import BuyCoin from 'src/components/headerLine/MenuBuyCoin.vue';
 import MenuTrade from 'src/components/headerLine/MenuTrade.vue';
 import { MenuComponent } from 'src/stores/MenuComponents/MenuComponent';
 import { storeToRefs } from 'pinia';
