@@ -12,6 +12,10 @@
       :class="mouse == true ? 'icon_arrow-show' : 'icon_arrow-noshow'"
       name="fas fa-arrow-right-long"
     />
+    <!-- <q-icon
+      class='icon_arrow'
+      name="fas fa-arrow-right-long"
+    /> -->
   </a>
 </template>
 <script lang="ts">
@@ -65,8 +69,10 @@ export default defineComponent({
   transform: all 0.1s linear;
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
+  visibility: hidden;
+  /* visibility: visible; */
 }
-.icon_arrow-noshow {
+/* .icon_arrow-noshow {
   color: #f0b90b;
   width: 22px;
   height: 22px;
@@ -75,6 +81,23 @@ export default defineComponent({
   justify-content: center;
   transform: all 0.1s linear;
   visibility: hidden;
+} */
+/* .icon_arrow {
+  color: #f0b90b;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  transform: all 0.1s linear;
+  visibility: visible;
+}*/
+.icon_arrow-show:hover {
+  left: 0;
+  opacity: 0;
+  fill: #848e9c;
+  visibility: hidden;
+  /* visibility: visible; */
 }
 .menu-ctx {
   margin: 0 16px 0 16px;
