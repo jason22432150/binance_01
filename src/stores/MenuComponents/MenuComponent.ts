@@ -36,7 +36,7 @@ export const MenuComponent = defineStore('MenuComponent', {
         message: '',
         arrow: true,
         menu: false,
-        transform: 'translate3d(355px, 64px, 0px)',
+        transform: 'translate3d(417px, 64px, 0px)',
       },
       {
         text: '理財',

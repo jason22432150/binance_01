@@ -15,6 +15,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import { MenuTradeList } from 'src/stores/MenuComponents/MenuTrade';
 import MenuDropLink from './MenuDropLink.vue';
@@ -41,6 +42,7 @@ export default {
   max-width: 400px;
   z-index: 1;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 8px 8px;
 }
 .Floor {
   padding: 16px 16px 16px 16px;

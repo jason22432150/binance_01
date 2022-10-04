@@ -53,7 +53,11 @@
                 {{ site.text }}
               </div>
             </div>
-            <div v-if="site.message != ''" class="dialogue" :style="{ color: '#1E2329'}">
+            <div
+              v-if="site.message != ''"
+              class="dialogue"
+              :style="{ color: '#1E2329' }"
+            >
               {{ site.message }}
             </div>
             <div v-if="site.arrow == true" class="caret-down-div">
@@ -71,8 +75,22 @@
                 :style="{ color: '#707A8A', display: 'flex' }"
               />
               <div v-if="site.menu == true">
-                <BuyCoin v-if="site.text == '買幣'" :style="{ transform: site.transform }" />
-                <MenuTrade v-if="site.text == '交易'" :style="{ transform: site.transform }" />
+                <BuyCoin
+                  v-if="site.text == '買幣'"
+                  :style="{ transform: site.transform }"
+                />
+                <MenuTrade
+                  v-if="site.text == '交易'"
+                  :style="{ transform: site.transform }"
+                />
+                <MenuDerivatives
+                  v-if="site.text == '衍生品'"
+                  :style="{
+                    position: 'fixed',
+                    inset: '0px auto auto 0px',
+                    transform: site.transform,
+                  }"
+                />
               </div>
             </div>
           </div>
@@ -106,9 +124,9 @@ import BinanceIcon from 'src/icons/BinanceLogo.vue';
 import BxBxsGrid from 'src/icons/BxBxsGrid.vue';
 import BuyCoin from 'src/components/headerLine/MenuBuyCoin.vue';
 import MenuTrade from 'src/components/headerLine/MenuTrade.vue';
+import MenuDerivatives from 'src/components/headerLine/MenuDerivatives.vue';
 import { MenuComponent } from 'src/stores/MenuComponents/MenuComponent';
 import { storeToRefs } from 'pinia';
-
 
 export default {
   components: {
@@ -116,6 +134,7 @@ export default {
     BxBxsGrid,
     BuyCoin,
     MenuTrade,
+    MenuDerivatives,
   },
   setup() {
     const rightDrawerOpen = ref(false);
