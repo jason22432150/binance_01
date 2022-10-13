@@ -2,9 +2,9 @@
   <q-header> </q-header>
   <div class="pagination-1">
     <div class="pagination-1-outside-container">
-      
-
-
+      <div class="pagination-1-inside-1">
+        
+      </div>
     </div>
   </div>
   <div class="pagination-2">
