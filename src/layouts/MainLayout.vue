@@ -1,27 +1,11 @@
 <template>
   <q-layout view="hHh LpR lfr">
+    <div></div>
     <q-header elevated class="qHeader bg-white text-white" height-hint="98">
       <a class="BinanceIcon" href="https://www.binance.com/zh-TW">
         <BinanceIcon />
       </a>
       <div class="Menubar">
-        <!-- <div class="FirstFloor">
-          <div class="SecondFloor">
-            <BxBxsGrid
-              @mouseover="mouseover"
-              :style="{ color: 'red' }"
-              class="BxBxsGrid"
-            />
-            <BxBxsGrid @mouseleave="mouseleave" class="BxBxsGrid text-yellow" />
-            <div class="caret-down-div">
-              <q-icon
-                name="fas fa-caret-down"
-                size="6.75px"
-                v-bind:style="{ color: '#707A8A', display: 'flex' }"
-              />
-            </div>
-          </div>
-        </div> -->
         <div
           class="FirstFloor"
           v-for="site in sites"
@@ -53,7 +37,11 @@
                 {{ site.text }}
               </div>
             </div>
-            <div v-if="site.message != ''" class="dialogue" :style="{ color: '#1E2329'}">
+            <div
+              v-if="site.message != ''"
+              class="dialogue"
+              :style="{ color: '#1E2329' }"
+            >
               {{ site.message }}
             </div>
             <div v-if="site.arrow == true" class="caret-down-div">
@@ -71,8 +59,14 @@
                 :style="{ color: '#707A8A', display: 'flex' }"
               />
               <div v-if="site.menu == true">
-                <BuyCoin v-if="site.text == '買幣'" :style="{ transform: site.transform }" />
-                <MenuTrade v-if="site.text == '交易'" :style="{ transform: site.transform }" />
+                <BuyCoin
+                  v-if="site.text == '買幣'"
+                  :style="{ transform: site.transform }"
+                />
+                <MenuTrade
+                  v-if="site.text == '交易'"
+                  :style="{ transform: site.transform }"
+                />
               </div>
             </div>
           </div>
@@ -108,7 +102,6 @@ import BuyCoin from 'src/components/headerLine/MenuBuyCoin.vue';
 import MenuTrade from 'src/components/headerLine/MenuTrade.vue';
 import { MenuComponent } from 'src/stores/MenuComponents/MenuComponent';
 import { storeToRefs } from 'pinia';
-
 
 export default {
   components: {
