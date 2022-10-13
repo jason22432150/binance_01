@@ -1,13 +1,20 @@
 <template>
   <q-header> </q-header>
-  <q-page class="test">
+  <div class="pagination-1">
+    <div class="pagination-1-outside-container">
+      
+
+
+    </div>
+  </div>
+  <div class="pagination-2">
     <div class="test">123321132</div>
     <div class="test">123321132</div>
     <div class="test">123321132</div>
     <div class="test">123321132</div>
     <div class="test">123321132</div>
     <div class="test">123321132</div>
-  </q-page>
+  </div>
 
   <!-- <router-view></router-view> -->
 </template>
@@ -22,7 +29,12 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.test {
-  /* background: rgb(122, 122, 122); */
+.pagination-1 {
+  height: 100vh;
+  background-color: aquamarine;
+}
+.pagination-2{
+  height: 100vh;
+  background-color: aqua;
 }
 </style>
