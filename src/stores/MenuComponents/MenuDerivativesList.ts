@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 
-export const Derivatives = defineStore('Derivatives', {
+export const MenuDerivativesList = defineStore('MenuDerivativesList', {
   state: () => ({
     sites: [
       {

@@ -1,5 +1,8 @@
 <template>
-  <a :class="mouse == true ? 'link_mouseover' : 'link_mouseleave'">
+  <a
+    :style="{ display: 'flex' }"
+    :class="mouse == true ? 'link_mouseover' : 'link_mouseleave'"
+  >
     <q-icon class="icon" name="fas fa-trailer" />
     <div class="menu-ctx">
       <div :style="{ display: 'flex' }">
@@ -8,10 +11,13 @@
       </div>
       <div :style="{ 'font-size': '12px' }">{{ expound }}</div>
     </div>
-    <q-icon
-      :class="mouse == true ? 'icon_arrow-show' : 'icon_arrow-noshow'"
-      name="fas fa-arrow-right-long"
-    />
+    <div class="left_arrow_container">
+      <q-icon
+        :class="mouse == true ? 'icon_arrow-' : 'icon_arrow'"
+        name="fas fa-arrow-right-long"
+      />
+    </div>
+
     <!-- <q-icon
       class='icon_arrow'
       name="fas fa-arrow-right-long"
@@ -38,6 +44,19 @@ export default defineComponent({
 </script>
 <!-- <card :title="item.title" :img="item.imgUrl" /> -->
 <style scoped>
+q-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left_arrow_container {
+  float: right;
+  display: flex;
+  align-items: center;
+  width: 14px;
+  /* width: 100%; */
+  /* height: 100%; */
+}
 .link_mouseover {
   padding: 16px;
   display: flex;
@@ -57,9 +76,9 @@ export default defineComponent({
   border-radius: 4px;
   display: flex;
   justify-content: center;
-  color: black;
+  color: #f0b90b;
 }
-.icon_arrow-show {
+.icon_arrow {
   color: #f0b90b;
   width: 22px;
   height: 22px;
@@ -69,38 +88,18 @@ export default defineComponent({
   transform: all 0.1s linear;
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
-  visibility: hidden;
-  /* visibility: visible; */
+  /* visibility: hidden; */
+  float: left;
 }
-/* .icon_arrow-noshow {
-  color: #f0b90b;
-  width: 22px;
-  height: 22px;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  transform: all 0.1s linear;
-  visibility: hidden;
-} */
-/* .icon_arrow {
-  color: #f0b90b;
-  width: 22px;
-  height: 22px;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  transform: all 0.1s linear;
-  visibility: visible;
-}*/
-.icon_arrow-show:hover {
+.icon_arrow:hover {
   left: 0;
   opacity: 0;
   fill: #848e9c;
-  visibility: hidden;
-  /* visibility: visible; */
+  /* visibility: hidden; */
 }
 .menu-ctx {
   margin: 0 16px 0 16px;
+  width: 100%;
 }
 
 .hot {
@@ -114,6 +113,7 @@ export default defineComponent({
   line-height: 16px;
   background-color: #fcd535;
   color: #1e2329;
+  align-items:center;
 }
 .hot::before {
   content: '';

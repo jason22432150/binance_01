@@ -67,6 +67,14 @@
                   v-if="site.text == '交易'"
                   :style="{ transform: site.transform }"
                 />
+                <MenuDerivatives
+                  v-if="site.text == '衍生品'"
+                  :style="{
+                    position: 'fixed',
+                    inset: '0px auto auto 0px',
+                    transform: site.transform,
+                  }"
+                />
               </div>
             </div>
           </div>
@@ -100,6 +108,7 @@ import BinanceIcon from 'src/icons/BinanceLogo.vue';
 import BxBxsGrid from 'src/icons/BxBxsGrid.vue';
 import BuyCoin from 'src/components/headerLine/MenuBuyCoin.vue';
 import MenuTrade from 'src/components/headerLine/MenuTrade.vue';
+import MenuDerivatives from 'src/components/headerLine/MenuDerivatives.vue';
 import { MenuComponent } from 'src/stores/MenuComponents/MenuComponent';
 import { storeToRefs } from 'pinia';
 
@@ -109,6 +118,7 @@ export default {
     BxBxsGrid,
     BuyCoin,
     MenuTrade,
+    MenuDerivatives,
   },
   setup() {
     const rightDrawerOpen = ref(false);
