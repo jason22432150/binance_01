@@ -5,16 +5,13 @@
     </q-drawer> -->
 
     <q-page-container>
-      <div :style="{ 'font-size': '10px' }">12321313212332112</div>
-
-      <div :style="{ 'font-size': '10px' }">12321313212332112</div>
       <router-view />
     </q-page-container>
   </q-layout>
 </template>
 
 <script>
-import HeaderMenu from 'src/components/headerLine/headerLine';
+import HeaderMenu from 'src/components/headerLine/MainLayout.vue';
 // import BuyCoin from 'src/components/headerLine/MenuBuyCoin.vue';
 // import { ref } from 'vue';
 // import { MenuComponent } from 'src/stores/MenuComponents/MenuComponent';
@@ -24,7 +21,7 @@ export default {
   // name: 'main',
   components: {
     // BuyCoin,
-    // HeaderMenu,
+    HeaderMenu,
   },
 };
 </script>

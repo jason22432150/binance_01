@@ -1,9 +1,11 @@
 <template>
   <q-header> </q-header>
-  <div class="pagination-1">123
-    <div class="pagination-1-outside-container">132
+  <div class="pagination-1">
+    <div class="pagination-1-outside-container">
       <div class="pagination-1-inside-container-1">
         <div class="title">在幣安購買、交易和持有超過 350 種加密貨幣</div>
+        <button>透過電子郵件或電話註冊</button>
+        <div></div>
       </div>
       <div class="pagination-1-inside-container-2"></div>
       <div class="pagination-1-inside-container-3"></div>

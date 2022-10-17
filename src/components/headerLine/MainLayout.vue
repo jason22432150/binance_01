@@ -1,5 +1,4 @@
 <template>
-  123
   <div elevated class="qHeader bg-white text-white" height-hint="98">
     <a class="BinanceIcon" href="https://www.binance.com/zh-TW">
       <BinanceIcon />
