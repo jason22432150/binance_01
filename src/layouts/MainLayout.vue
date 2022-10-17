@@ -1,15 +1,11 @@
 <template>
   <HeaderMenu />
   <q-layout view="hHh LpR lfr">
-    <!-- <q-drawer v-model="rightDrawerOpen" side="right" behavior="mobile" bordered>
-    </q-drawer> -->
-
     <q-page-container>
       <router-view />
     </q-page-container>
   </q-layout>
 </template>
-
 <script>
 import HeaderMenu from 'src/components/headerLine/MainLayout.vue';
 // import BuyCoin from 'src/components/headerLine/MenuBuyCoin.vue';
