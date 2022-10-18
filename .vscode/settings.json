@@ -7,5 +7,11 @@
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "vue"],
   "typescript.tsdk": "node_modules/typescript/lib",
   "cSpell.words": ["alicorn", "noshow"],
-  "background.loop": true
+  "background.loop": true,
+  "favorites.resources": [
+    {
+      "filePath": "src\\components\\headerLine",
+      "group": "Default"
+    }
+  ]
 }
