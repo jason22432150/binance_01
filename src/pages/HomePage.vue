@@ -1,54 +1,64 @@
 <template>
   <q-header> </q-header>
   <div class="pagination-1">
-    <div :style="{ display: 'flex', 'justify-content': 'center' }">
-      <div :style="{ width: '560px', margin: '0 106px 0 0' }">
-        <h1 class="title">在幣安購買、交易和持有超過 350 種加密貨幣</h1>
-        <div :style="{ margin: '48px 0 0 0', width: '384px' }">
-          <a href="test" class="btn">透過電子郵件或電話註冊</a>
-          <div
-            :style="{
-              display: 'flex',
-              'align-items': 'center',
-              margin: '16px 0 16px 0',
-              width: '384px',
-            }"
-          >
-            <div class="line-style" />
-            <div :style="{ margin: '0 48px 0 48px' }">或</div>
-            <div class="line-style" />
-          </div>
-          <a href="test" class="btn" :style="{ 'background-color': '#FAFAFA' }"
-            >使用Google繼續</a
-          ><a
-            href="test"
-            class="btn"
-            :style="{ margin: '16px 0 0 0', 'background-color': '#FAFAFA' }"
-            >使用Apple繼續</a
-          >
-          <div>
-            <a href="" :style="{ 'box-sizing': 'border-box' }"
-              >cxsertyujkmnbv</a
+    <div :style="{ 'max-width': '1248px', margin: '0 auto 0 auto' }">
+      <div :style="{ display: 'flex', 'justify-content': 'center' }">
+        <div :style="{ width: '560px', margin: '0 106px 0 0' }">
+          <h1 class="title">在幣安購買、交易和持有超過 350 種加密貨幣</h1>
+          <div :style="{ margin: '48px 0 0 0', width: '384px' }">
+            <a href="test" class="btn">透過電子郵件或電話註冊</a>
+            <div
+              :style="{
+                display: 'flex',
+                'align-items': 'center',
+                margin: '16px 0 16px 0',
+                width: '384px',
+              }"
+            >
+              <div class="line-style" />
+              <div :style="{ margin: '0 48px 0 48px' }">或</div>
+              <div class="line-style" />
+            </div>
+            <a
+              href="test"
+              class="btn"
+              :style="{ 'background-color': '#FAFAFA' }"
+              >使用Google繼續</a
+            ><a
+              href="test"
+              class="btn"
+              :style="{ margin: '16px 0 0 0', 'background-color': '#FAFAFA' }"
+              >使用Apple繼續</a
             >
           </div>
         </div>
+        <div>
+          <img
+            :style="{
+              height: '443.7px',
+              filter: 'drop-shadow(0 0 0.2rem rgb(0,0,0,0.1))',
+            }"
+            src="src/assets/image/foreground-image-light.png"
+            alt=""
+          />
+        </div>
       </div>
-      <div>
-        <img
-          :style="{
-            height: '443.7px',
-            filter: 'drop-shadow(0 0 0.2rem rgb(0,0,0,0.1))',
-          }"
-          src="src/assets/image/foreground-image-light.png"
-          alt=""
-        />
+      <div
+        :style="{
+          display: 'flex',
+          'align-items': 'center',
+          'justify-content': 'center',
+          padding: '80px 0 80px 0',
+        }"
+      >
+        <div :style="{ width: '25%' }">
+          <div class="P1-down-title">760 億美元</div>
+          <div class="P1-down-content">幣安交易所的 24 小時交易量</div>
+        </div>
+        <div class="P1-down-content">222</div>
+        <div class="P1-d1">333</div>
+        <div class="P1-down">444</div>
       </div>
-    </div>
-    <div :style="{ display: 'flex' }">
-      <div>123</div>
-      <div>222</div>
-      <div>333</div>
-      <div>444</div>
     </div>
   </div>
   <div class="pagination-2">
@@ -111,5 +121,15 @@ export default defineComponent({
   flex: 1;
   background-color: #eaecef;
   box-sizing: border-box;
+}
+.P1-down-title {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
+}
+.P1-down-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 </style>
