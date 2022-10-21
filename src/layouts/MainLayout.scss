@@ -104,13 +104,21 @@
   height: 100%;
   padding: 0 16px 0 16px;
 }
-.bt-login {
+.menu-text{
   color: rgb(30, 35, 41);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  user-select: none;
+}
+.menu-text:hover{
+  color: #C99400;
+}
+.bt-login {
   user-select: none;
   padding: 6px 12px;
   min-height: 24px;
   font-weight: 400;
-  font-size: 14px;
   text-align: center;
 }
 .bt-register {
@@ -123,6 +131,21 @@
   border-radius: 4px;
   text-align: center;
   font-size: 14px;
+}
+.other-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: black;
+  padding: 0 8px 0 8px;
+  box-sizing: border-box;
+}
+.vertical-line {
+  margin: 0 8px 0 8px;
+  width: 1px;
+  height: 13px;
+  background: #b7bdc6;
 }
 
 @media (min-device-width: 768px) and (max-device-width: 1024px) {

@@ -91,16 +91,21 @@
     </div>
     <div :style="{ display: 'flex', flex: '1' }"></div>
     <div class="login_out-container">
-      <a class="bt-login">登入</a>
+      <a class="bt-login menu-text">登入</a>
       <div :style="{ width: '12px', height: '12px' }" />
       <a class="bt-register">註冊</a>
     </div>
+    <div class="menu-text" :style="{ margin: '0 8px 0 8px' }">下載</div>
     <div class="other-container">
-      
+      <div class="menu-text">繁體中文</div>
+      <i class="vertical-line"></i>
+      <div class="menu-text">USD</div>
+      <i class="vertical-line"></i>
+      <div class="menu-text">月</div>
     </div>
-    <div :style="{ color: 'black' }">159624862462145</div>
   </div>
 </template>
+
 <script>
 import { ref } from 'vue';
 import BinanceIcon from 'src/icons/BinanceLogo.vue';
