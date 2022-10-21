@@ -2,7 +2,7 @@
   "name": "binance-01",
   "version": "0.0.1",
   "description": "A Quasar Project",
-  "productName": "Binance 幣安",
+  "productName": "買入/賣出比特幣、以太幣和其他加密貨幣 | 加密貨幣交易所 | 幣安",
   "author": "jason22432150 <52876522+jason22432150@users.noreply.github.com>",
   "private": true,
   "scripts": {

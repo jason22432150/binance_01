@@ -6,7 +6,12 @@
         <div :style="{ width: '560px', margin: '0 106px 0 0' }">
           <h1 class="title">在幣安購買、交易和持有超過 350 種加密貨幣</h1>
           <div :style="{ margin: '48px 0 0 0', width: '384px' }">
-            <a href="test" class="btn">透過電子郵件或電話註冊</a>
+            <a href="test" class="btn"
+              ><q-icon
+                name="img:src/assets/human-icon.svg"
+                class="P1-btn-icon"
+              />透過電子郵件或電話註冊</a
+            >
             <div
               :style="{
                 display: 'flex',
@@ -23,12 +28,19 @@
               href="test"
               class="btn"
               :style="{ 'background-color': '#eaecef' }"
-              >使用Google繼續</a
+            >
+              <q-icon
+                class="P1-btn-icon"
+                name="img:src/assets/image/google-icon.png"
+              />使用Google繼續</a
             ><a
               href="test"
               class="btn"
               :style="{ margin: '16px 0 0 0', 'background-color': '#eaecef' }"
-              >使用Apple繼續</a
+              ><q-icon
+                class="P1-btn-icon"
+                name="img:src/assets/apple-dark-icon.svg"
+              />使用Apple繼續</a
             >
           </div>
         </div>
@@ -113,11 +125,16 @@ export default defineComponent({
 
 <style scoped>
 .pagination-1 {
+  box-sizing: border-box;
   height: 752px;
   padding: '80px  24px 0 24px';
-  /* align-items: center; */
   padding: 80px 0 0 0;
   background-color: #fafafa;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: -24px;
+  background-image: url('src/assets/image/web-background-image.png');
 }
 .pagination-2 {
   height: 100vh;
@@ -174,5 +191,11 @@ export default defineComponent({
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+.P1-btn-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  box-sizing: border-box;
 }
 </style>

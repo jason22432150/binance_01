@@ -89,6 +89,16 @@
         @click="toggleRightDrawer"
       />
     </div>
+    <div :style="{ display: 'flex', flex: '1' }"></div>
+    <div class="login_out-container">
+      <a class="bt-login">登入</a>
+      <div :style="{ width: '12px', height: '12px' }" />
+      <a class="bt-register">註冊</a>
+    </div>
+    <div class="other-container">
+      
+    </div>
+    <div :style="{ color: 'black' }">159624862462145</div>
   </div>
 </template>
 <script>

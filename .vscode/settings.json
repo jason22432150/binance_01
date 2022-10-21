@@ -13,5 +13,6 @@
       "filePath": "src\\components\\headerLine",
       "group": "Default"
     }
-  ]
+  ],
+  "svg.preview.background": "custom"
 }

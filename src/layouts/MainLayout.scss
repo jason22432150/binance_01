@@ -1,7 +1,7 @@
 .Menubar {
   height: 100%;
   align-items: center;
-  -webkit-user-select:none;
+  -webkit-user-select: none;
 }
 .BxBxsGrid {
   width: 24px;
@@ -87,7 +87,6 @@
 .caret-up {
   transition: all 0.1s ease 0s;
   transform: rotateX(180deg);
-
 }
 .menuPadding {
   flex: 1;
@@ -96,6 +95,34 @@
 
 .BuyCoin {
   background-color: #ffffff;
+}
+.login_out-container {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 16px 0 16px;
+}
+.bt-login {
+  color: rgb(30, 35, 41);
+  user-select: none;
+  padding: 6px 12px;
+  min-height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+}
+.bt-register {
+  color: rgb(30, 35, 41);
+  user-select: none;
+  padding: 6px 12px;
+  min-height: 24px;
+  font-weight: 400;
+  background-color: #fcd94a;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
 }
 
 @media (min-device-width: 768px) and (max-device-width: 1024px) {
