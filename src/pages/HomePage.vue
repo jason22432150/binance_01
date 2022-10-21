@@ -22,12 +22,12 @@
             <a
               href="test"
               class="btn"
-              :style="{ 'background-color': '#FAFAFA' }"
+              :style="{ 'background-color': '#eaecef' }"
               >使用Google繼續</a
             ><a
               href="test"
               class="btn"
-              :style="{ margin: '16px 0 0 0', 'background-color': '#FAFAFA' }"
+              :style="{ margin: '16px 0 0 0', 'background-color': '#eaecef' }"
               >使用Apple繼續</a
             >
           </div>
@@ -52,12 +52,45 @@
         }"
       >
         <div :style="{ width: '25%' }">
-          <div class="P1-down-title">760 億美元</div>
-          <div class="P1-down-content">幣安交易所的 24 小時交易量</div>
+          <div
+            :style="{
+              padding: '0 40px 0 40px',
+            }"
+          >
+            <div class="P1-down-title">760 億美元</div>
+            <div class="P1-down-content">幣安交易所的 24 小時交易量</div>
+          </div>
         </div>
-        <div class="P1-down-content">222</div>
-        <div class="P1-d1">333</div>
-        <div class="P1-down">444</div>
+        <div :style="{ width: '25%' }">
+          <div
+            :style="{
+              padding: '0 40px 0 40px',
+            }"
+          >
+            <div class="P1-down-title">350+</div>
+            <div class="P1-down-content">上市的加密貨幣</div>
+          </div>
+        </div>
+        <div :style="{ width: '25%' }">
+          <div
+            :style="{
+              padding: '0 40px 0 40px',
+            }"
+          >
+            <div class="P1-down-title">9000 萬</div>
+            <div class="P1-down-content">信任幣安的註冊用戶</div>
+          </div>
+        </div>
+        <div :style="{ width: '25%' }">
+          <div
+            :style="{
+              padding: '0 40px 0 40px',
+            }"
+          >
+            <div class="P1-down-title">&lt;0.10%</div>
+            <div class="P1-down-content">最低的交易手續費</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -84,7 +117,7 @@ export default defineComponent({
   padding: '80px  24px 0 24px';
   /* align-items: center; */
   padding: 80px 0 0 0;
-  background-color: aquamarine;
+  background-color: #fafafa;
 }
 .pagination-2 {
   height: 100vh;
@@ -121,6 +154,16 @@ export default defineComponent({
   flex: 1;
   background-color: #eaecef;
   box-sizing: border-box;
+}
+.P1-down-container {
+  margin-left: -40px;
+  margin-right: -40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0 80px 0;
 }
 .P1-down-title {
   font-size: 40px;
