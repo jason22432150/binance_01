@@ -101,7 +101,9 @@
       <i class="vertical-line"></i>
       <div class="menu-text">USD</div>
       <i class="vertical-line"></i>
-      <div class="menu-text">月</div>
+      <div class="menu-text">
+        <q-icon name="fa-solid fa-moon" />
+      </div>
     </div>
   </div>
 </template>

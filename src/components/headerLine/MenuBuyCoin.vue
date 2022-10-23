@@ -2,6 +2,7 @@
   <div class="BuyCoin text-black">
     <div class="firstFloor-up">
       <div class="pay-Way">支付方式為</div>
+      <div :style="{ flex: '1' }"></div>
       <div>
         <div :style="{ color: '#707A8A', display: 'flex', padding: '12px' }">
           <q-icon
@@ -13,6 +14,7 @@
               width: '20px',
             }"
           />
+
           <div :style="{ padding: '0 8px 0 8px' }">EUR</div>
           <q-icon
             name="fas fa-caret-right"
