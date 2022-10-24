@@ -94,10 +94,13 @@
       <a class="bt-login menu-text">登入</a>
       <div :style="{ width: '12px', height: '12px' }" />
       <a class="bt-register">註冊</a>
+      <a class="bt-register">{{ t('register') }}</a>
     </div>
     <div class="menu-text" :style="{ margin: '0 8px 0 8px' }">下載</div>
     <div class="other-container">
-      <div class="menu-text">繁體中文</div>
+      <div class="menu-text" :click="locale">繁體中文</div>
+      <i class="vertical-line"></i>
+      <div class="menu-text" :click="locale">英文</div>
       <i class="vertical-line"></i>
       <div class="menu-text">USD</div>
       <i class="vertical-line"></i>
@@ -109,6 +112,7 @@
 </template>
 
 <script>
+import { useI18n } from 'vue-i18n';
 import { ref } from 'vue';
 import BinanceIcon from 'src/icons/BinanceLogo.vue';
 import BxBxsGrid from 'src/icons/BxBxsGrid.vue';
@@ -128,6 +132,8 @@ export default {
     MenuDerivatives,
   },
   setup() {
+    const { t, locale } = useI18n();
+
     const rightDrawerOpen = ref(false);
     const store = MenuComponent();
     const { sites } = storeToRefs(store);
@@ -138,6 +144,19 @@ export default {
       toggleRightDrawer() {
         rightDrawerOpen.value = !rightDrawerOpen.value;
       },
+
+      t,
+      locale,
+      localeOptions: [
+        {
+          lang: 'en',
+          name: 'English',
+        },
+        {
+          lang: 'zh',
+          name: '繁體中文',
+        },
+      ],
     };
   },
 };
