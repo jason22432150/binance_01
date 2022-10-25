@@ -100,6 +100,8 @@ module.exports = configure(function (/* ctx */) {
     framework: {
       config: {},
 
+      // i18n: 'zh-TW',
+
       iconSet: 'material-icons', // Quasar icon set
       // lang: 'en-US', // Quasar language pack
 
