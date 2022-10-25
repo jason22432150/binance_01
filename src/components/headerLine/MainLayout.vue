@@ -94,13 +94,13 @@
       <a class="bt-login menu-text">登入</a>
       <div :style="{ width: '12px', height: '12px' }" />
       <a class="bt-register">註冊</a>
-      <a class="bt-register">{{ t('register') }}</a>
+      <a class="bt-register">{{ t("register") }}</a>
     </div>
     <div class="menu-text" :style="{ margin: '0 8px 0 8px' }">下載</div>
     <div class="other-container">
-      <div class="menu-text" :click="locale">繁體中文</div>
+      <div class="menu-text" :click="locale=zh">繁體中文</div>
       <i class="vertical-line"></i>
-      <div class="menu-text" :click="locale">英文</div>
+      <div class="menu-text" :click="locale=en">英文</div>
       <i class="vertical-line"></i>
       <div class="menu-text">USD</div>
       <i class="vertical-line"></i>
