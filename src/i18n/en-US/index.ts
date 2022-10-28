@@ -6,9 +6,4 @@ export default {
   register: 'register',
   failed: 'Action failed',
   success: 'Action was successful',
-  // test:[
-  //   register: 'register',
-  // failed: 'Action failed',
-  // success: 'Action was successful'
-  // ]
 };
