@@ -106,12 +106,6 @@
       </div>
     </div>
   </div>
-  <div class="pagination-2">
-    <div class="test">123321132</div>
-    <div class="test">123321132</div>
-    <div class="test">123321132</div>
-    <div class="test">123321132</div>
-  </div>
 </template>
 
 <script lang="ts">
@@ -135,10 +129,6 @@ export default defineComponent({
   background-position: center;
   margin-bottom: -24px;
   background-image: url('src/assets/image/web-background-image.png');
-}
-.pagination-2 {
-  height: 100vh;
-  background-color: aqua;
 }
 .title {
   font-size: 40px;
