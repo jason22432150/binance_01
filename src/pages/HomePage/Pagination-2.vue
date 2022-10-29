@@ -1,9 +1,11 @@
 <template>
-  <div :style="{ padding: '80px 0 80px 0', 'border-radius': '24px 24px 0 0' }">
+  <div class="pagination-2">
     <div
       :style="{
         padding: '0 24px 0 24px',
         margin: '0 124px 0 124px',
+        // 'margin-left': 'auto',
+        // 'margin-right': 'auto',
         // display: 'flex',
         // alignItems: 'center',
       }"
@@ -37,8 +39,14 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+.pagination-2 {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  padding: 80px 0 80px 0;
+  border-radius: 24px 24px 0 0;
+}
 .upTitle {
-
   font-weight: 600;
   font-size: 40px;
   line-height: 48px;
